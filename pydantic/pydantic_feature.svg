@@ -43,8 +43,8 @@
     
     <!-- Code background -->
     <pattern id="codePattern" patternUnits="userSpaceOnUse" width="20" height="20">
-      <rect width="20" height="20" fill="#f8f9fa"/>
-      <circle cx="2" cy="2" r="0.5" fill="#e9ecef"/>
+      <rect width="20" height="20" fill="#080809ff"/>
+      <circle cx="2" cy="2" r="0.5" fill="#040608ff"/>
     </pattern>
   </defs>
 
@@ -77,7 +77,7 @@
     </text>
     
     <!-- Code example -->
-    <rect x="30" y="150" width="700" height="220" rx="8" fill="url(#codePattern)" stroke="#e2e8f0" stroke-width="1"/>
+    <rect x="30" y="150" width="700" height="220" rx="8" fill="url(#codePattern)" stroke="#070808ff" stroke-width="1"/>
     <text x="45" y="175" font-family="Monaco, monospace" font-size="12" fill="#2d3748" font-weight="bold">
       from pydantic import BaseModel
     </text>
@@ -425,7 +425,7 @@
     <!-- Three column layout for advanced features -->
     <g transform="translate(30, 80)">
       <!-- Column 1: Custom Validators -->
-      <rect x="0" y="0" width="480" height="220" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="480" height="220" rx="8" fill="#0b0808ff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
       <text x="240" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2d3748">
         🔧 Custom Validators &amp; Computed Fields
       </text>
@@ -460,7 +460,7 @@
     
     <!-- Column 2: Model Configuration -->
     <g transform="translate(510, 80)">
-      <rect x="0" y="0" width="520" height="220" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="520" height="220" rx="8" fill="#0a0a0aff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
       <text x="260" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2d3748">
         ⚙️ Model Configuration &amp; Settings
       </text>
@@ -495,7 +495,7 @@
     
     <!-- Column 3: Serialization -->
     <g transform="translate(1050, 80)">
-      <rect x="0" y="0" width="480" height="220" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
+      <rect x="0" y="0" width="480" height="220" rx="8" fill="#0b0a0aff" stroke="#e2e8f0" stroke-width="1" filter="url(#shadow)"/>
       <text x="240" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2d3748">
         📤 Serialization &amp; Export Options
       </text>
@@ -540,7 +540,7 @@
     <!-- Two column layout for best practices -->
     <g transform="translate(30, 80)">
       <!-- Left column: Performance Tips -->
-      <rect x="0" y="0" width="740" height="170" rx="8" fill="#f7fafc" stroke="#cbd5e0" stroke-width="1"/>
+      <rect x="0" y="0" width="740" height="170" rx="8" fill="#080909ff" stroke="#cbd5e0" stroke-width="1"/>
       <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2d3748">
         🚀 Performance &amp; Memory Optimization
       </text>
@@ -566,7 +566,7 @@
     
     <!-- Right column: Development Tips -->
     <g transform="translate(790, 80)">
-      <rect x="0" y="0" width="740" height="170" rx="8" fill="#fffaf0" stroke="#fbd38d" stroke-width="1"/>
+      <rect x="0" y="0" width="740" height="170" rx="8" fill="#0c0c0bff" stroke="#fbd38d" stroke-width="1"/>
       <text x="20" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2d3748">
         🔧 Development &amp; Debugging Best Practices
       </text>
