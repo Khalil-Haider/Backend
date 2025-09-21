@@ -1,0 +1,202 @@
+<svg viewBox="0 0 900 700" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="900" height="700" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">
+    FastAPI Parameter Tools &amp; Classes
+  </text>
+  
+  <!-- Core Tools Section -->
+  <text x="450" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#475569">
+    Core Parameter Tools
+  </text>
+  
+  <!-- Path Tool -->
+  <g>
+    <rect x="50" y="90" width="160" height="80" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="130" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1e40af">
+      Path()
+    </text>
+    <text x="130" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      Path validation
+    </text>
+    <text x="130" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      Min/max, title
+    </text>
+    <text x="130" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#7c3aed">
+      ge=1, le=1000
+    </text>
+  </g>
+  
+  <!-- Query Tool -->
+  <g>
+    <rect x="230" y="90" width="160" height="80" rx="8" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+    <text x="310" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#15803d">
+      Query()
+    </text>
+    <text x="310" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      Query validation
+    </text>
+    <text x="310" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      Alias, default
+    </text>
+    <text x="310" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#7c3aed">
+      alias="page_num"
+    </text>
+  </g>
+  
+  <!-- Body Tool -->
+  <g>
+    <rect x="410" y="90" width="160" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="490" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#d97706">
+      Body()
+    </text>
+    <text x="490" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      Request body
+    </text>
+    <text x="490" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#475569">
+      JSON validation
+    </text>
+    <text x="490" y="165" text-anchor="middle" font-family="monospace" font-size="10" fill="#7c3aed">
+      embed=True
+    </text>
+  </g>
+  
+  <!-- Additional Tools Section -->
+  <text x="450" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#475569">
+    Additional Parameter Tools
+  </text>
+  
+  <!-- Form -->
+  <g>
+    <rect x="50" y="240" width="140" height="70" rx="8" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="120" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#92400e">
+      Form()
+    </text>
+    <text x="120" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+      Form data
+    </text>
+    <text x="120" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#7c3aed">
+      multipart/form
+    </text>
+  </g>
+  
+  <!-- File -->
+  <g>
+    <rect x="210" y="240" width="140" height="70" rx="8" fill="#fed7d7" stroke="#e53e3e" stroke-width="2"/>
+    <text x="280" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#c53030">
+      File()
+    </text>
+    <text x="280" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+      File uploads
+    </text>
+    <text x="280" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#7c3aed">
+      UploadFile
+    </text>
+  </g>
+  
+  <!-- Header -->
+  <g>
+    <rect x="370" y="240" width="140" height="70" rx="8" fill="#e9d5ff" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="440" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#7c3aed">
+      Header()
+    </text>
+    <text x="440" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+      HTTP headers
+    </text>
+    <text x="440" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#7c3aed">
+      X-Token
+    </text>
+  </g>
+  
+  <!-- Cookie -->
+  <g>
+    <rect x="530" y="240" width="140" height="70" rx="8" fill="#fecaca" stroke="#f87171" stroke-width="2"/>
+    <text x="600" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#dc2626">
+      Cookie()
+    </text>
+    <text x="600" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+      HTTP cookies
+    </text>
+    <text x="600" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#7c3aed">
+      session_id
+    </text>
+  </g>
+  
+  <!-- Depends -->
+  <g>
+    <rect x="690" y="240" width="140" height="70" rx="8" fill="#bfdbfe" stroke="#60a5fa" stroke-width="2"/>
+    <text x="760" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#2563eb">
+      Depends()
+    </text>
+    <text x="760" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#475569">
+      Dependencies
+    </text>
+    <text x="760" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#7c3aed">
+      get_current_user
+    </text>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="50" y1="350" x2="850" y2="350" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Key Distinction -->
+  <text x="450" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1e293b">
+    Key Distinction
+  </text>
+  
+  <!-- Concepts Box -->
+  <rect x="80" y="400" width="300" height="120" rx="12" fill="#f0f9ff" stroke="#0ea5e9" stroke-width="3"/>
+  <text x="230" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0369a1">
+    Core Concepts
+  </text>
+  <text x="230" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    • Path Parameters
+  </text>
+  <text x="230" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    • Query Parameters
+  </text>
+  <text x="230" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    • Request Body
+  </text>
+  <text x="230" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#64748b">
+    Fundamental input types
+  </text>
+  
+  <!-- FastAPI Tools Box -->
+  <rect x="420" y="400" width="300" height="120" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="3"/>
+  <text x="570" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#15803d">
+    FastAPI Tools
+  </text>
+  <text x="570" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    Path(), Query(), Body()
+  </text>
+  <text x="570" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    Form(), File(), Header()
+  </text>
+  <text x="570" y="490" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#475569">
+    Cookie(), Depends()
+  </text>
+  <text x="570" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#64748b">
+    Validation &amp; extra features
+  </text>
+  
+  <!-- Code Example -->
+  <rect x="50" y="550" width="800" height="120" rx="8" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+  <text x="70" y="575" font-family="monospace" font-size="11" fill="#10b981">
+    from fastapi import FastAPI, Path, Query, Body, Form, File
+  </text>
+  <text x="70" y="595" font-family="monospace" font-size="11" fill="#e2e8f0">
+    
+  </text>
+  <text x="70" y="615" font-family="monospace" font-size="11" fill="#3b82f6">
+    @app.post("/users/{user_id}")
+  </text>
+  <text x="70" y="635" font-family="monospace" font-size="11" fill="#e2e8f0">
+    def update_user(user_id: int = Path(ge=1),
+  </text>
+  <text x="70" y="655" font-family="monospace" font-size="11" fill="#e2e8f0">
+                    page: int = Query(default=1, alias="p")):
+  </text>
+</svg>

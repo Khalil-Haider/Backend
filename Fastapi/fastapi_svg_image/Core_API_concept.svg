@@ -1,0 +1,284 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Clean gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Card backgrounds -->
+    <linearGradient id="pathCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="queryCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bodyCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+      <feOffset dx="2" dy="4" result="offset"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.1"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="900" fill="url(#bgGradient)"/>
+
+  <!-- Main Title -->
+  <rect x="50" y="30" width="1300" height="90" rx="20" fill="url(#headerGradient)" filter="url(#shadow)"/>
+  <text x="700" y="95" text-anchor="middle" fill="white" font-family="Arial, sans-serif" 
+        font-size="48" font-weight="bold">
+    🎯 Core API Concepts - Data Input Methods
+  </text>
+
+  <!-- Subtitle -->
+  <text x="700" y="160" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" 
+        font-size="24" font-weight="300">
+    The 3 Fundamental Ways Data Enters Your API
+  </text>
+
+  <!-- Path Parameters Section -->
+  <rect x="80" y="200" width="380" height="550" rx="20" fill="url(#pathCard)" 
+        stroke="#10b981" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Path Parameter Header -->
+  <rect x="100" y="220" width="340" height="70" rx="15" fill="#10b981"/>
+  <text x="270" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" 
+        font-size="26" font-weight="bold">1️⃣ Path Parameters</text>
+  <text x="270" y="270" text-anchor="middle" fill="#dcfce7" font-family="Arial, sans-serif" 
+        font-size="16">Part of the URL Path</text>
+
+  <!-- Concept Explanation -->
+  <text x="110" y="330" fill="#1e293b" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    💡 Concept:
+  </text>
+  <text x="130" y="355" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Values embedded directly in the URL path
+  </text>
+  <text x="130" y="375" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Used to identify specific resources
+  </text>
+
+  <!-- URL Example -->
+  <rect x="110" y="400" width="320" height="60" rx="10" fill="#f0f9ff" stroke="#10b981" stroke-width="2"/>
+  <text x="270" y="425" text-anchor="middle" fill="#059669" font-family="Arial, sans-serif" 
+        font-size="16" font-weight="bold">Example URL:</text>
+  <text x="270" y="445" text-anchor="middle" fill="#047857" font-family="monospace" 
+        font-size="14">/users/123/posts/456</text>
+
+  <!-- Parameters highlight -->
+  <text x="110" y="490" fill="#1e293b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🔍 Parameters:
+  </text>
+  <text x="130" y="515" fill="#059669" font-family="Arial, sans-serif" font-size="14">
+    • user_id = 123
+  </text>
+  <text x="130" y="535" fill="#059669" font-family="Arial, sans-serif" font-size="14">
+    • post_id = 456
+  </text>
+
+  <!-- Use Cases -->
+  <text x="110" y="570" fill="#1e293b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    📋 Common Use Cases:
+  </text>
+  <text x="130" y="595" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Resource identification (IDs, slugs)
+  </text>
+  <text x="130" y="615" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Hierarchical data navigation
+  </text>
+  <text x="130" y="635" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • RESTful API design patterns
+  </text>
+  <text x="130" y="655" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Required data for endpoints
+  </text>
+
+  <!-- FastAPI Code Example -->
+  <rect x="110" y="680" width="320" height="50" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="270" y="700" text-anchor="middle" fill="#475569" font-family="monospace" font-size="11">
+    @app.get("/users/{user_id}")
+  </text>
+  <text x="270" y="715" text-anchor="middle" fill="#475569" font-family="monospace" font-size="11">
+    def get_user(user_id: int):
+  </text>
+
+  <!-- Query Parameters Section -->
+  <rect x="510" y="200" width="380" height="550" rx="20" fill="url(#queryCard)" 
+        stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Query Parameter Header -->
+  <rect x="530" y="220" width="340" height="70" rx="15" fill="#3b82f6"/>
+  <text x="700" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" 
+        font-size="26" font-weight="bold">2️⃣ Query Parameters</text>
+  <text x="700" y="270" text-anchor="middle" fill="#dbeafe" font-family="Arial, sans-serif" 
+        font-size="16">After ? in URL</text>
+
+  <!-- Concept Explanation -->
+  <text x="540" y="330" fill="#1e293b" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    💡 Concept:
+  </text>
+  <text x="560" y="355" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Optional parameters for filtering/pagination
+  </text>
+  <text x="560" y="375" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Modify or customize the response
+  </text>
+
+  <!-- URL Example -->
+  <rect x="540" y="400" width="320" height="60" rx="10" fill="#f0f9ff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="700" y="425" text-anchor="middle" fill="#1d4ed8" font-family="Arial, sans-serif" 
+        font-size="16" font-weight="bold">Example URL:</text>
+  <text x="700" y="445" text-anchor="middle" fill="#2563eb" font-family="monospace" 
+        font-size="12">/items?skip=0 limit=10 category=books</text>
+
+  <!-- Parameters highlight -->
+  <text x="540" y="490" fill="#1e293b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    🔍 Parameters:
+  </text>
+  <text x="560" y="515" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="14">
+    • skip = 0 (pagination)
+  </text>
+  <text x="560" y="535" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="14">
+    • limit = 10 (page size)
+  </text>
+  <text x="560" y="555" fill="#1d4ed8" font-family="Arial, sans-serif" font-size="14">
+    • category = books (filter)
+  </text>
+
+  <!-- Use Cases -->
+  <text x="540" y="585" fill="#1e293b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    📋 Common Use Cases:
+  </text>
+  <text x="560" y="610" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Pagination (skip, limit, page)
+  </text>
+  <text x="560" y="630" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Filtering (category, status, date)
+  </text>
+  <text x="560" y="650" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Sorting (sort_by, order)
+  </text>
+  <text x="560" y="670" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Optional configurations
+  </text>
+
+  <!-- FastAPI Code Example -->
+  <rect x="540" y="690" width="320" height="45" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="700" y="710" text-anchor="middle" fill="#475569" font-family="monospace" font-size="11">
+    def get_items(skip: int = 0, limit: int = 10):
+  </text>
+  <text x="700" y="725" text-anchor="middle" fill="#475569" font-family="monospace" font-size="11">
+    return items[skip:skip+limit]
+  </text>
+
+  <!-- Request Body Section -->
+  <rect x="940" y="200" width="380" height="550" rx="20" fill="url(#bodyCard)" 
+        stroke="#8b5cf6" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Request Body Header -->
+  <rect x="960" y="220" width="340" height="70" rx="15" fill="#8b5cf6"/>
+  <text x="1130" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" 
+        font-size="26" font-weight="bold">3️⃣ Request Body</text>
+  <text x="1130" y="270" text-anchor="middle" fill="#f3e8ff" font-family="Arial, sans-serif" 
+        font-size="16">JSON Data in HTTP Body</text>
+
+  <!-- Concept Explanation -->
+  <text x="970" y="330" fill="#1e293b" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    💡 Concept:
+  </text>
+  <text x="990" y="355" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Complex data sent in HTTP request body
+  </text>
+  <text x="990" y="375" fill="#475569" font-family="Arial, sans-serif" font-size="14">
+    Usually JSON format for creating/updating
+  </text>
+
+  <!-- JSON Example -->
+  <rect x="970" y="400" width="320" height="100" rx="10" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1130" y="420" text-anchor="middle" fill="#7c3aed" font-family="Arial, sans-serif" 
+        font-size="16" font-weight="bold">Example JSON:</text>
+  <text x="990" y="440" fill="#6d28d9" font-family="monospace" font-size="12">
+    {
+  </text>
+  <text x="1000" y="455" fill="#6d28d9" font-family="monospace" font-size="12">
+    "name": "Laptop",
+  </text>
+  <text x="1000" y="470" fill="#6d28d9" font-family="monospace" font-size="12">
+    "price": 999.99,
+  </text>
+  <text x="1000" y="485" fill="#6d28d9" font-family="monospace" font-size="12">
+    "category": "electronics"
+  </text>
+  <text x="990" y="495" fill="#6d28d9" font-family="monospace" font-size="12">
+    }
+  </text>
+
+  <!-- Use Cases -->
+  <text x="970" y="535" fill="#1e293b" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    📋 Common Use Cases:
+  </text>
+  <text x="990" y="560" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Creating new resources (POST)
+  </text>
+  <text x="990" y="580" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Updating existing resources (PUT/PATCH)
+  </text>
+  <text x="990" y="600" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Complex data structures
+  </text>
+  <text x="990" y="620" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • Form submissions (JSON format)
+  </text>
+  <text x="990" y="640" fill="#475569" font-family="Arial, sans-serif" font-size="13">
+    • File uploads with metadata
+  </text>
+
+  <!-- Pydantic Model Example -->
+  <rect x="970" y="660" width="320" height="70" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="1130" y="680" text-anchor="middle" fill="#475569" font-family="monospace" font-size="10">
+    class Item(BaseModel):
+  </text>
+  <text x="1130" y="695" text-anchor="middle" fill="#475569" font-family="monospace" font-size="10">
+    name: str; price: float
+  </text>
+  <text x="1130" y="710" text-anchor="middle" fill="#475569" font-family="monospace" font-size="10">
+    @app.post("/items/")
+  </text>
+  <text x="1130" y="725" text-anchor="middle" fill="#475569" font-family="monospace" font-size="10">
+    def create_item(item: Item):
+  </text>
+
+  <!-- Bottom Summary Box -->
+  <rect x="100" y="780" width="1200" height="100" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  
+  <text x="700" y="810" text-anchor="middle" fill="#1e293b" font-family="Arial, sans-serif" 
+        font-size="22" font-weight="bold">🎯 Key Takeaway</text>
+  
+  <text x="700" y="835" text-anchor="middle" fill="#475569" font-family="Arial, sans-serif" 
+        font-size="16">These are the 3 fundamental ways data enters any API. FastAPI integrates with Pydantic to provide type checking, data conversion, and documentation for all three methods.</text>
+  
+  <text x="700" y="855" text-anchor="middle" fill="#64748b" font-family="Arial, sans-serif" 
+        font-size="14">Every API endpoint uses at least one of these input methods to receive data from clients.</text>
+
+</svg>

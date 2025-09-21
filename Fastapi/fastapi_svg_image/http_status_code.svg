@@ -1,0 +1,217 @@
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Premium gradient backgrounds -->
+    <linearGradient id="mainBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f1f5f9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Card gradients for different categories -->
+    <linearGradient id="infoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f9ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="successGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0fdf4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="redirectGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fffbeb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="clientErrorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fef2f2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="serverErrorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#faf5ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Premium shadows -->
+    <filter id="premiumShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="4" result="offset"/>
+      <feFlood flood-color="#1e293b" flood-opacity="0.1"/>
+      <feComposite in2="offset" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="headerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="6" result="offset"/>
+      <feFlood flood-color="#0f172a" flood-opacity="0.15"/>
+      <feComposite in2="offset" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Accent patterns -->
+    <pattern id="dotPattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#e2e8f0" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with subtle pattern -->
+  <rect width="1400" height="900" fill="url(#mainBg)"/>
+  <rect width="1400" height="900" fill="url(#dotPattern)" opacity="0.5"/>
+  
+  <!-- Header section with premium styling -->
+  <rect x="50" y="30" width="1300" height="120" rx="24" fill="white" filter="url(#headerShadow)" stroke="url(#mainBg)" stroke-width="1"/>
+  
+  <!-- Accent bar -->
+  <rect x="50" y="30" width="1300" height="8" rx="24" fill="linear-gradient(90deg, #3b82f6 0%, #10b981 25%, #f59e0b 50%, #ef4444 75%, #8b5cf6 100%)"/>
+  
+  <!-- Title -->
+  <text x="700" y="85" font-family="'Segoe UI', Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="#0f172a">
+    HTTP STATUS CODES
+  </text>
+  <text x="700" y="115" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="400" text-anchor="middle" fill="#64748b">
+    FastAPI Reference Guide
+  </text>
+  
+  <!-- Category cards with premium design -->
+  
+  <!-- 1xx Informational -->
+  <rect x="70" y="180" width="240" height="160" rx="20" fill="url(#infoGrad)" filter="url(#premiumShadow)" stroke="#0ea5e9" stroke-width="3"/>
+  <rect x="70" y="180" width="240" height="8" rx="20" fill="#0ea5e9"/>
+  <circle cx="100" cy="210" r="12" fill="#0ea5e9"/>
+  <text x="115" y="216" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">1xx INFORMATIONAL</text>
+  <rect x="90" y="235" width="200" height="1" fill="#e2e8f0"/>
+  <text x="190" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#475569">Range: 100-199</text>
+  <text x="190" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Request in progress</text>
+  <text x="190" y="295" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#0ea5e9">100 Continue • 101 Switching</text>
+  <text x="190" y="315" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#94a3b8">Rarely used in FastAPI</text>
+  
+  <!-- 2xx Success -->
+  <rect x="340" y="180" width="240" height="160" rx="20" fill="url(#successGrad)" filter="url(#premiumShadow)" stroke="#10b981" stroke-width="3"/>
+  <rect x="340" y="180" width="240" height="8" rx="20" fill="#10b981"/>
+  <circle cx="370" cy="210" r="12" fill="#10b981"/>
+  <text x="385" y="216" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">2xx SUCCESS</text>
+  <rect x="360" y="235" width="200" height="1" fill="#e2e8f0"/>
+  <text x="460" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#475569">Range: 200-299</text>
+  <text x="460" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Request successful</text>
+  <text x="460" y="295" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#10b981">200 OK • 201 Created • 204 No Content</text>
+  <text x="460" y="315" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#94a3b8">Most common responses</text>
+  
+  <!-- 3xx Redirection -->
+  <rect x="610" y="180" width="240" height="160" rx="20" fill="url(#redirectGrad)" filter="url(#premiumShadow)" stroke="#f59e0b" stroke-width="3"/>
+  <rect x="610" y="180" width="240" height="8" rx="20" fill="#f59e0b"/>
+  <circle cx="640" cy="210" r="12" fill="#f59e0b"/>
+  <text x="655" y="216" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">3xx REDIRECTION</text>
+  <rect x="630" y="235" width="200" height="1" fill="#e2e8f0"/>
+  <text x="730" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#475569">Range: 300-399</text>
+  <text x="730" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Further action required</text>
+  <text x="730" y="295" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#d97706">301 Moved • 302 Found • 304 Not Modified</text>
+  <text x="730" y="315" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#94a3b8">Redirect responses</text>
+  
+  <!-- 4xx Client Error -->
+  <rect x="880" y="180" width="240" height="160" rx="20" fill="url(#clientErrorGrad)" filter="url(#premiumShadow)" stroke="#ef4444" stroke-width="3"/>
+  <rect x="880" y="180" width="240" height="8" rx="20" fill="#ef4444"/>
+  <circle cx="910" cy="210" r="12" fill="#ef4444"/>
+  <text x="925" y="216" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">4xx CLIENT ERROR</text>
+  <rect x="900" y="235" width="200" height="1" fill="#e2e8f0"/>
+  <text x="1000" y="255" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#475569">Range: 400-499</text>
+  <text x="1000" y="275" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Client-side errors</text>
+  <text x="1000" y="295" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#dc2626">400 Bad • 401 Unauthorized • 404 Not Found</text>
+  <text x="1000" y="315" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#94a3b8">Validation  auth errors</text>
+  
+  <!-- 5xx Server Error (centered below) -->
+  <rect x="475" y="370" width="240" height="160" rx="20" fill="url(#serverErrorGrad)" filter="url(#premiumShadow)" stroke="#8b5cf6" stroke-width="3"/>
+  <rect x="475" y="370" width="240" height="8" rx="20" fill="#8b5cf6"/>
+  <circle cx="505" cy="400" r="12" fill="#8b5cf6"/>
+  <text x="520" y="406" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" fill="#0f172a">5xx SERVER ERROR</text>
+  <rect x="495" y="425" width="200" height="1" fill="#e2e8f0"/>
+  <text x="595" y="445" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#475569">Range: 500-599</text>
+  <text x="595" y="465" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle" fill="#64748b">Server-side errors</text>
+  <text x="595" y="485" font-family="'Segoe UI', Arial, sans-serif" font-size="11" font-weight="500" text-anchor="middle" fill="#7c3aed">500 Internal • 502 Bad Gateway • 503 Unavailable</text>
+  <text x="595" y="505" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle" fill="#94a3b8">Unhandled exceptions</text>
+  
+  <!-- Detailed status codes section -->
+  <rect x="70" y="560" width="1260" height="300" rx="24" fill="white" filter="url(#premiumShadow)" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Section header -->
+  <rect x="70" y="560" width="1260" height="60" rx="24" fill="linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)"/>
+  <text x="700" y="595" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#0f172a">
+    Most Common Status Codes in FastAPI
+  </text>
+  
+  <!-- Three-column layout for detailed codes -->
+  
+  <!-- Column 1: Success Codes -->
+  <rect x="100" y="650" width="370" height="180" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="100" y="650" width="370" height="6" rx="16" fill="#10b981"/>
+  <text x="285" y="680" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">Success Responses</text>
+  
+  <!-- 200 OK -->
+  <circle cx="125" cy="705" r="8" fill="#10b981"/>
+  <text x="145" y="710" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#10b981">200 OK</text>
+  <text x="145" y="725" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Standard success response</text>
+  <text x="145" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Default for GET operations</text>
+  
+  <!-- 201 Created -->
+  <circle cx="125" cy="760" r="8" fill="#10b981"/>
+  <text x="145" y="765" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#10b981">201 Created</text>
+  <text x="145" y="780" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Resource created successfully</text>
+  <text x="145" y="795" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Used in POST operations</text>
+  
+  <!-- 204 No Content -->
+  <circle cx="125" cy="815" r="8" fill="#10b981"/>
+  <text x="145" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#10b981">204 No Content</text>
+  <text x="370" y="810" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">DELETE success</text>
+  
+  <!-- Column 2: Client Errors -->
+  <rect x="500" y="650" width="370" height="180" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="500" y="650" width="370" height="6" rx="16" fill="#ef4444"/>
+  <text x="685" y="680" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">Client Errors</text>
+  
+  <!-- 400 Bad Request -->
+  <circle cx="525" cy="705" r="8" fill="#ef4444"/>
+  <text x="545" y="710" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ef4444">400 Bad Request</text>
+  <text x="545" y="725" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Invalid request syntax</text>
+  <text x="545" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">General validation errors</text>
+  
+  <!-- 401 Unauthorized -->
+  <circle cx="525" cy="760" r="8" fill="#ef4444"/>
+  <text x="545" y="765" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ef4444">401 Unauthorized</text>
+  <text x="545" y="780" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Authentication required</text>
+  <text x="545" y="795" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Missing or invalid credentials</text>
+  
+  <!-- 404 Not Found -->
+  <circle cx="525" cy="815" r="8" fill="#ef4444"/>
+  <text x="545" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ef4444">404 Not Found</text>
+  <text x="770" y="810" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Resource missing</text>
+  
+  <!-- Column 3: Advanced Errors -->
+  <rect x="900" y="650" width="370" height="180" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="900" y="650" width="370" height="6" rx="16" fill="#8b5cf6"/>
+  <text x="1085" y="680" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#0f172a">Advanced Errors</text>
+  
+  <!-- 403 Forbidden -->
+  <circle cx="925" cy="705" r="8" fill="#ef4444"/>
+  <text x="945" y="710" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ef4444">403 Forbidden</text>
+  <text x="945" y="725" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Access denied</text>
+  <text x="945" y="740" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Authorization failures</text>
+  
+  <!-- 422 Unprocessable Entity -->
+  <circle cx="925" cy="760" r="8" fill="#ef4444"/>
+  <text x="945" y="765" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#ef4444">422 Unprocessable</text>
+  <text x="945" y="780" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#475569">Validation errors</text>
+  <text x="945" y="795" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Pydantic validation failures</text>
+  
+  <!-- 500 Internal Server Error -->
+  <circle cx="925" cy="815" r="8" fill="#8b5cf6"/>
+  <text x="945" y="820" font-family="'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#8b5cf6">500 Internal Error</text>
+  <text x="1170" y="810" font-family="'Segoe UI', Arial, sans-serif" font-size="10" font-style="italic" fill="#64748b">Server exceptions</text>
+  
+</svg>

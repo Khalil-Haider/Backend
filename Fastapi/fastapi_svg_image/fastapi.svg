@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);">
+  
+  <!-- Animated Background Particles -->
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#374151;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Dots Pattern -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#475569" opacity="0.3"/>
+  </pattern>
+  <rect width="1200" height="800" fill="url(#dots)"/>
+
+  <!-- Floating Particles -->
+  <circle cx="100" cy="100" r="2" fill="#10b981" opacity="0.6">
+    <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1100" cy="200" r="3" fill="#3b82f6" opacity="0.4">
+    <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="600" r="2" fill="#8b5cf6" opacity="0.5">
+    <animate attributeName="cx" values="150;170;150" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Main Container -->
+  <rect x="50" y="50" width="1100" height="700" rx="20" fill="url(#cardGradient)" stroke="#10b981" stroke-width="2" opacity="0.1"/>
+
+  <!-- Header Section -->
+  <text x="600" y="120" font-family="'Segoe UI', sans-serif" font-size="48" font-weight="bold" fill="#ffffff" text-anchor="middle" filter="url(#glow)">
+    FastAPI Framework
+  </text>
+  
+  <text x="600" y="160" font-family="'Segoe UI', sans-serif" font-size="20" fill="#94a3b8" text-anchor="middle">
+    Modern • Fast • Production-Ready Python API Framework
+  </text>
+
+  <!-- Logo Section with Animation -->
+  <g transform="translate(150, 250)">
+    <circle cx="0" cy="0" r="80" fill="url(#logoGradient)" filter="url(#glow)">
+      <animate attributeName="r" values="80;85;80" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Lightning Bolt -->
+    <path d="M-25 -40 L25 -10 L10 0 L35 30 L-10 10 L5 0 Z" fill="white" stroke="#ffffff" stroke-width="2">
+      <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Database Connection Visualization -->
+  <g transform="translate(150, 450)">
+    <rect x="-60" y="-30" width="120" height="60" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="2"/>
+    <text x="0" y="8" font-family="'Segoe UI', sans-serif" font-size="14" fill="#10b981" text-anchor="middle" font-weight="bold">DATABASE</text>
+    
+    <!-- Connection Lines -->
+    <line x1="60" y1="0" x2="200" y2="0" stroke="#10b981" stroke-width="3" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;-10" dur="1s" repeatCount="indefinite"/>
+    </line>
+    
+    <!-- Data Flow Indicators -->
+    <circle cx="120" cy="0" r="4" fill="#10b981">
+      <animate attributeName="cx" values="60;200;60" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Features Grid -->
+  <g transform="translate(350, 250)">
+    
+    <!-- Row 1 -->
+    <g class="feature-item">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#10b981"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">⚡</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">High Performance</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Ultra-fast execution with async support</text>
+    </g>
+
+    <g class="feature-item" transform="translate(400, 0)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#3b82f6" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#3b82f6"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">🛡️</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Auto Validation</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Automatic request/response validation</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g class="feature-item" transform="translate(0, 80)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#8b5cf6" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2.8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#8b5cf6"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">📚</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Auto Documentation</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Interactive API docs with Swagger UI</text>
+    </g>
+
+    <g class="feature-item" transform="translate(400, 80)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#f59e0b"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">🔐</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Security Built-in</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">OAuth2, JWT, API key authentication</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g class="feature-item" transform="translate(0, 160)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#ef4444" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="2.6s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#ef4444"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">💉</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Dependency Injection</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Powerful DI system for clean architecture</text>
+    </g>
+
+    <g class="feature-item" transform="translate(400, 160)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#06b6d4" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#06b6d4"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">🚀</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Production Ready</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Battle-tested in enterprise environments</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g class="feature-item" transform="translate(200, 240)">
+      <rect x="0" y="0" width="380" height="60" rx="10" fill="#1f2937" stroke="#10b981" stroke-width="1" opacity="0.8">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3.8s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="30" cy="30" r="12" fill="#10b981"/>
+      <text x="30" y="36" font-family="'Segoe UI', sans-serif" font-size="16" fill="white" text-anchor="middle">📊</text>
+      <text x="60" y="25" font-family="'Segoe UI', sans-serif" font-size="18" fill="#ffffff" font-weight="600">Reduced Errors by 40%</text>
+      <text x="60" y="45" font-family="'Segoe UI', sans-serif" font-size="14" fill="#94a3b8">Type hints prevent common mistakes</text>
+    </g>
+  </g>
+
+  <!-- Performance Metrics -->
+  <g transform="translate(80, 600)">
+    <rect x="0" y="0" width="1040" height="120" rx="15" fill="#1f2937" stroke="#10b981" stroke-width="2" opacity="0.9"/>
+    
+    <text x="520" y="30" font-family="'Segoe UI', sans-serif" font-size="20" fill="#10b981" text-anchor="middle" font-weight="bold">
+      Performance Benchmarks
+    </text>
+    
+    <!-- Benchmark bars -->
+    <g transform="translate(50, 50)">
+      <text x="0" y="15" font-family="'Segoe UI', sans-serif" font-size="14" fill="#ffffff">Requests/sec:</text>
+      <rect x="120" y="0" width="200" height="20" rx="10" fill="#374151"/>
+      <rect x="120" y="0" width="180" height="20" rx="10" fill="#10b981">
+        <animate attributeName="width" values="0;180" dur="2s" begin="1s"/>
+      </rect>
+      <text x="330" y="15" font-family="'Segoe UI', sans-serif" font-size="14" fill="#10b981" font-weight="bold">65,000+</text>
+    </g>
+    
+    <g transform="translate(450, 50)">
+      <text x="0" y="15" font-family="'Segoe UI', sans-serif" font-size="14" fill="#ffffff">Response Time:</text>
+      <rect x="120" y="0" width="200" height="20" rx="10" fill="#374151"/>
+      <rect x="120" y="0" width="160" height="20" rx="10" fill="#3b82f6">
+        <animate attributeName="width" values="0;160" dur="2s" begin="1.5s"/>
+      </rect>
+      <text x="330" y="15" font-family="'Segoe UI', sans-serif" font-size="14" fill="#3b82f6" font-weight="bold">&lt;1ms</text>
+    </g>
+  </g>
+
+  <!-- Interactive Hover Effects -->
+  <style>
+    <![CDATA[
+    .feature-item:hover rect {
+      opacity: 1 !important;
+      transform: scale(1.02);
+      transition: all 0.3s ease;
+    }
+    .feature-item:hover text {
+      filter: url(#glow);
+    }
+    ]]>
+  </style>
+
+</svg>
